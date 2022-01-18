@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
   return res.send('Hello World!')
 })
 
+app.get('/cadastro', (req, res) => {
+  return res.render('create')
+})
+
 const port = process.env.PORT || 5000
 
 app.listen(port, () => {
